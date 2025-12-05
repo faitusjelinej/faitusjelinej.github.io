@@ -10,84 +10,107 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f5f7fa;
-            color: #333;
+            background: #f5f5f5;
+            color: #222;
         }
+
         header {
             background: #1f2937;
             color: white;
-            padding: 40px 20px;
+            padding: 40px;
             text-align: center;
         }
+
         header h1 {
             margin: 0;
-            font-size: 36px;
-        }
-        header p {
-            font-size: 18px;
-            margin-top: 10px;
+            font-size: 35px;
         }
 
-        .section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
+        section {
             background: white;
-            margin-top: 20px;
+            margin: 25px auto;
+            padding: 25px;
+            width: 85%;
             border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
         }
 
         h2 {
             color: #1f2937;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
+            border-left: 5px solid #2563eb;
+            padding-left: 10px;
         }
 
-        .skills span {
-            background: #e5e7eb;
-            padding: 6px 10px;
-            display: inline-block;
-            margin: 5px;
-            border-radius: 6px;
+        ul {
+            line-height: 1.7;
         }
 
-        .social a {
-            margin-right: 15px;
-            text-decoration: none;
+        .contact a {
             color: #2563eb;
-            font-weight: bold;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            color: #555;
+            text-decoration: none;
         }
     </style>
 </head>
+
 <body>
+    <header>
+        <h1>Faitus Jeline Joseph</h1>
+        <p>Senior Data Engineer • Azure • Snowflake • Spark • Airflow • Python • ML</p>
+    </header>
 
-<header>
-    <h1>Faitus Jeline Joseph</h1>
-    <p>Senior Data Engineer | Azure | Snowflake | Spark | AI & Machine Learning</p>
-    <p>Fremont, CA • faitus.jeline@gmail.com</p>
-</header>
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:faitus.jeline@gmail.com">faitus.jeline@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/faitusjeline/" target="_blank">linkedin.com/in/faitusjeline</a></p>
+        <p>GitHub: <a href="https://github.com/faitusjelinej" target="_blank">github.com/faitusjelinej</a></p>
+        <p>YouTube: <a href="https://www.youtube.com/@dataenggstudies/videos" target="_blank">YouTube Channel</a></p>
+    </section>
 
-<div class="section">
-    <h2>Summary</h2>
-    <p>
-        Senior Data Engineer with 19+ years of experience delivering enterprise-scale 
-        solutions across finance, healthcare, and public sector. Expertise in 
-        Azure Data Engineering, Snowflake, dbt, Apache Spark, Airflow, Machine Learning, and cloud-based ETL pipelines. 
-        Hands-on experience with Azure OpenAI Studio & Azure AI Studio for building and deploying AI solutions.
-    </p>
-</div>
+    <section>
+        <h2>Summary</h2>
+        <p>
+            Senior Data Engineer with 19+ years of experience delivering enterprise-scale data platforms 
+            across healthcare, finance, and public sector. Expertise in Azure Data Engineering, 
+            cloud ETL pipelines, Snowflake, Spark, dbt, and Airflow. Hands-on with Azure OpenAI Studio 
+            and Machine Learning for predictive analytics and AI automation.
+        </p>
+    </section>
 
-<div class="section">
-    <h2>Skills</h2>
-    <div class="skills">
-        <span>Python</span><span>SQL</span><span>Spark SQL</span><span>PySpark</span>
-        <span>GraphQL</span><span>Azure Synapse</span><span>Azure Data Factory</span>
-        <s
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> Python, SQL, Spark SQL, UNIX</li>
+            <li><strong>Cloud & Orchestration:</strong> Azure Synapse, ADF, Azure DevOps, Docker, Kubernetes, Terraform</li>
+            <li><strong>Big Data:</strong> Apache Spark, PySpark, Delta Lake, Iceberg, Airflow, dbt</li>
+            <li><strong>Databases:</strong> SQL Server, Snowflake, Oracle, PostgreSQL, MongoDB, Cosmos DB</li>
+            <li><strong>AI/ML:</strong> Azure OpenAI, Azure AI Studio, K-Means, Linear Regression, Random Forest</li>
+            <li><strong>Visualization:</strong> Tableau, Matplotlib, Flask</li>
+        </ul>
+    </section>
 
+    <section>
+        <h2>Data Engineering Project 1 - AC Transit</h2>
+        <h3>Senior Data Engineer – Clever File Processing Project</h3>
+
+        <p>
+            One of the data engineering projects I’m particularly proud of is the Clever File 
+            Processing Project for AC Transit. I took complete end-to-end ownership of this project 
+            across all phases. The main challenge was the large, inconsistent datasets spread across 
+            multiple formats, making ingestion and transformation complex.
+        </p>
+
+        <ul>
+            <li>Used <strong>Azure Synapse Analytics</strong> to orchestrate ingestion from CSV, APIs, and SQL databases into ADLS.</li>
+            <li>Leveraged <strong>PySpark</strong> to clean, standardize, and enrich the files for downstream consumption.</li>
+            <li>Implemented <strong>Apache Airflow</strong> for scheduling and monitoring reliable pipelines.</li>
+            <li>Built <strong>Python-based visualizations</strong> to validate processed data and share operational insights.</li>
+        </ul>
+
+        <p>
+            This automated solution improved data quality, eliminated manual intervention, and enabled AC Transit 
+            to process large and complex datasets at scale.
+        </p>
+    </section>
+
+</body>
+</html>
