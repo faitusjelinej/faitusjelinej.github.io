@@ -148,7 +148,7 @@
 
     <section class="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:faitus.jeline@gmail.com">faitus.jeline@gmail.com</a></p>
+        <p>Email: <a href="/cdn-cgi/l/email-protection#5d3b3c3429282e733738313433381d3a303c3431733e3230"><span class="__cf_email__" data-cfemail="3e585f574a4b4d10545b5257505b7e59535f5752105d5153">[email&#160;protected]</span></a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/faitusjeline/" target="_blank">linkedin.com/in/faitusjeline</a></p>
         <p>GitHub: <a href="https://github.com/faitusjelinej" target="_blank">github.com/faitusjelinej</a></p>
         <p>YouTube: <a href="https://www.youtube.com/@dataenggstudies/videos" target="_blank">YouTube Channel</a></p>
@@ -179,6 +179,14 @@
     <section>
         <h2>Data Engineering Project 1 - AC Transit</h2>
         <h3>Senior Data Engineer – Clever File Processing Project</h3>
+
+        <div class="tech-tags">
+            <span class="tech-tag">Azure Synapse Analytics</span>
+            <span class="tech-tag">PySpark</span>
+            <span class="tech-tag">Apache Airflow</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">ADLS</span>
+        </div>
 
         <p>
             One of the data engineering projects I'm particularly proud of is the Clever File 
@@ -227,11 +235,45 @@
 
         <p>
             🔗 <strong>Code:</strong> 
-            <a href="https://github.com/faitusjelinej/AI/tree/main/Chatbot" target="_blank" style="color:#2563eb;">
+            "color:#2563eb;">
                 github.com/faitusjelinej/AI/tree/main/Chatbot
             </a>
         </p>
+    </section>
 
+    <!-- ── Project 3 ── -->
+    <section>
+        <h2>Data Engineering Project 3 - RAG Pipeline</h2>
+        <h3>Retrieval-Augmented Generation with LangChain, Groq &amp; HuggingFace</h3>
+
+        <p>
+            Built a fully functional RAG (Retrieval-Augmented Generation) pipeline using LangChain's
+            LCEL (LangChain Expression Language). The pipeline loads documents, splits them into chunks,
+            embeds them with HuggingFace, stores them in a Chroma vector store, and answers questions
+            using the Groq-hosted Llama 3.1 model — all in a clean, composable chain.
+        </p>
+
+        <div class="tech-tags">
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">Groq (Llama 3.1)</span>
+            <span class="tech-tag">HuggingFace Embeddings</span>
+            <span class="tech-tag">Chroma</span>
+            <span class="tech-tag">Python</span>
+        </div>
+
+        <ul>
+            <li>Loaded and chunked documents using <strong>TextLoader</strong> and <strong>RecursiveCharacterTextSplitter</strong> for efficient retrieval.</li>
+            <li>Generated semantic embeddings with <strong>HuggingFace all-MiniLM-L6-v2</strong> and persisted them in a <strong>Chroma</strong> vector store.</li>
+            <li>Composed a full RAG chain using <strong>LCEL</strong> — retriever → prompt → LLM → output parser — in a single declarative pipeline.</li>
+            <li>Powered responses with <strong>Groq's llama-3.1-8b-instant</strong> model for fast, accurate question answering over custom documents.</li>
+        </ul>
+
+        <p>
+            🔗 <strong>Code:</strong>
+            <a href="https://github.com/faitusjelinej/AI/blob/main/Langchain/main.py" target="_blank" style="color:#2563eb;">
+                github.com/faitusjelinej/AI/blob/main/Langchain/main.py
+            </a>
+        </p>
     </section>
 
 </body>
