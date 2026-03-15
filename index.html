@@ -69,6 +69,73 @@
             color: #2563eb;
             text-decoration: none;
         }
+
+        /* Project tech tags */
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 12px 0;
+        }
+
+        .tech-tag {
+            background: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+            border-radius: 20px;
+            padding: 4px 12px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .learn-box {
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            border-radius: 6px;
+            padding: 14px 18px;
+            margin-top: 16px;
+        }
+
+        .learn-box h4 {
+            margin: 0 0 8px 0;
+            color: #15803d;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .learn-box ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .learn-box ul li {
+            font-size: 14px;
+            color: #166534;
+            line-height: 1.8;
+        }
+
+        /* Code preview block */
+        .code-preview {
+            background: #1e293b;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-top: 16px;
+            overflow-x: auto;
+        }
+
+        .code-preview pre {
+            margin: 0;
+            color: #94a3b8;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 12.5px;
+            line-height: 1.6;
+        }
+
+        .code-preview .kw  { color: #7dd3fc; }
+        .code-preview .fn  { color: #86efac; }
+        .code-preview .st  { color: #fde68a; }
+        .code-preview .cm  { color: #64748b; }
     </style>
 </head>
 
@@ -108,6 +175,7 @@
         </ul>
     </section>
 
+    <!-- ── Project 1 ── -->
     <section>
         <h2>Data Engineering Project 1 - AC Transit</h2>
         <h3>Senior Data Engineer – Clever File Processing Project</h3>
@@ -130,6 +198,40 @@
             This automated solution improved data quality, eliminated manual intervention, and enabled AC Transit 
             to process large and complex datasets at scale.
         </p>
+    </section>
+
+    <!-- ── Project 2 ── -->
+    <section>
+        <h2>Data Engineering Project 2 - AI Weather Assistant</h2>
+        <h3>Azure OpenAI Function Calling with Flask – Weather Chatbot Tutorial</h3>
+
+        <p>
+            Build an AI-powered weather assistant using Azure OpenAI's function calling feature with Flask.
+            This tutorial covers integrating the OpenWeather API, implementing function calling end-to-end,
+            and creating a complete interactive chatbot from scratch.
+        </p>
+
+        <div class="tech-tags">
+            <span class="tech-tag">Azure OpenAI</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">OpenWeather API</span>
+        </div>
+
+        <ul>
+            <li>Configured <strong>Azure OpenAI</strong> with a GPT deployment and set up function calling to route weather queries automatically.</li>
+            <li>Integrated the <strong>OpenWeather API</strong> to fetch real-time city weather data including temperature, humidity, and conditions.</li>
+            <li>Built a <strong>Flask backend</strong> with a <code>/chat</code> endpoint that handles multi-turn function call / response cycles.</li>
+            <li>Designed a lightweight <strong>chat UI</strong> in HTML/JavaScript enabling users to ask natural-language weather questions.</li>
+        </ul>
+
+        <p>
+            🔗 <strong>Code:</strong> 
+            <a href="https://github.com/faitusjelinej/AI/tree/main/Chatbot" target="_blank" style="color:#2563eb;">
+                github.com/faitusjelinej/AI/tree/main/Chatbot
+            </a>
+        </p>
+
     </section>
 
 </body>
