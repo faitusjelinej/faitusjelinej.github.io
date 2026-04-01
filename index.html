@@ -70,7 +70,6 @@
             text-decoration: none;
         }
 
-        /* Project tech tags */
         .tech-tags {
             display: flex;
             flex-wrap: wrap;
@@ -115,7 +114,6 @@
             line-height: 1.8;
         }
 
-        /* Code preview block */
         .code-preview {
             background: #1e293b;
             border-radius: 8px;
@@ -148,7 +146,7 @@
 
     <section class="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="/cdn-cgi/l/email-protection#5d3b3c3429282e733738313433381d3a303c3431733e3230"><span class="__cf_email__" data-cfemail="3e585f574a4b4d10545b5257505b7e59535f5752105d5153">[email&#160;protected]</span></a></p>
+        <p>Email: <a href="mailto:faitus.jeline@gmail.com">faitus.jeline@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/faitusjeline/" target="_blank">linkedin.com/in/faitusjeline</a></p>
         <p>GitHub: <a href="https://github.com/faitusjelinej" target="_blank">github.com/faitusjelinej</a></p>
         <p>YouTube: <a href="https://www.youtube.com/@dataenggstudies/videos" target="_blank">YouTube Channel</a></p>
@@ -158,7 +156,7 @@
         <h2>Summary</h2>
         <p>
             Senior Data Engineer delivering enterprise-scale data platforms across healthcare, finance, and public sector.
-            Expertise in Azure Data Engineering, cloud ETL pipelines, Snowflake, Spark, dbt, and Airflow. Hands-on with 
+            Expertise in Azure Data Engineering, cloud ETL pipelines, Snowflake, Spark, dbt, and Airflow. Hands-on with
             Azure OpenAI Studio and Machine Learning for predictive analytics and AI automation.
         </p>
     </section>
@@ -175,9 +173,47 @@
         </ul>
     </section>
 
-    <!-- ── Project 1 ── -->
+    <!-- ── Project 1 (NEW) ── -->
     <section>
         <h2>Data Engineering Project 1 - AC Transit</h2>
+        <h3>Medallion Architecture Data Pipeline on Snowflake with Azure Synapse</h3>
+
+        <div class="tech-tags">
+            <span class="tech-tag">Snowflake</span>
+            <span class="tech-tag">Azure Synapse Analytics</span>
+            <span class="tech-tag">dbt</span>
+            <span class="tech-tag">Snowpark</span>
+            <span class="tech-tag">Snowpipe</span>
+            <span class="tech-tag">Dynamic Tables</span>
+            <span class="tech-tag">Streams &amp; Tasks</span>
+            <span class="tech-tag">SCD Type 2</span>
+        </div>
+
+        <p>
+            Designed and implemented an end-to-end medallion architecture (Bronze/Silver/Gold) data pipeline
+            at AC Transit to consolidate operational data from CleverCAD vehicle tracking and Ellipse ERP systems.
+        </p>
+
+        <ul>
+            <li>Ingested raw data through <strong>Azure Synapse Analytics</strong> into Snowflake's Bronze layer via <strong>Snowpipe</strong> for continuous automated loading from operational sources.</li>
+            <li>Applied incremental transformations in the <strong>Silver layer</strong> using Snowflake <strong>Streams &amp; Tasks</strong> with <strong>SCD Type 2</strong> change tracking to maintain full historical records.</li>
+            <li>Built the <strong>Gold layer</strong> using <strong>dbt</strong> models and macros for reusable business logic, <strong>Snowpark</strong> for Python-based transformations, and <strong>Dynamic Tables</strong> for declarative auto-refreshing curated datasets consumed by BI teams.</li>
+            <li>Leveraged Snowflake-native features including <strong>Time Travel</strong> for data recovery, <strong>Zero-Copy Cloning</strong> for safe environment replication, and <strong>Data Sharing</strong> for live cross-team data access — eliminating data duplication across consumers.</li>
+        </ul>
+
+        <p>
+            This pipeline eliminated manual data reconciliation, enabled real-time operational reporting,
+            and provided a fully auditable data lineage from source to BI consumption.
+        </p>
+
+        <img src="https://raw.githubusercontent.com/faitusjelinej/faitusjelinej.github.io/main/Project1.png"
+             alt="Medallion Architecture Data Flow Diagram"
+             style="width:100%; max-width:860px; display:block; margin:20px auto 0; border-radius:10px; box-shadow:0px 4px 12px rgba(0,0,0,0.12);" />
+    </section>
+
+    <!-- ── Project 2 ── -->
+    <section>
+        <h2>Data Engineering Project 2 - AC Transit</h2>
         <h3>Senior Data Engineer – Clever File Processing Project</h3>
 
         <div class="tech-tags">
@@ -189,9 +225,9 @@
         </div>
 
         <p>
-            One of the data engineering projects I'm particularly proud of is the Clever File 
-            Processing Project for AC Transit. I took complete end-to-end ownership of this project 
-            across all phases. The main challenge was the large, inconsistent datasets spread across 
+            One of the data engineering projects I'm particularly proud of is the Clever File
+            Processing Project for AC Transit. I took complete end-to-end ownership of this project
+            across all phases. The main challenge was the large, inconsistent datasets spread across
             multiple formats, making ingestion and transformation complex.
         </p>
 
@@ -203,14 +239,14 @@
         </ul>
 
         <p>
-            This automated solution improved data quality, eliminated manual intervention, and enabled AC Transit 
+            This automated solution improved data quality, eliminated manual intervention, and enabled AC Transit
             to process large and complex datasets at scale.
         </p>
     </section>
 
-    <!-- ── Project 2 ── -->
+    <!-- ── Project 3 ── -->
     <section>
-        <h2>Data Engineering Project 2 - AI Weather Assistant</h2>
+        <h2>Data Engineering Project 3 - AI Weather Assistant</h2>
         <h3>Azure OpenAI Function Calling with Flask – Weather Chatbot Tutorial</h3>
 
         <p>
@@ -241,9 +277,9 @@
         </p>
     </section>
 
-    <!-- ── Project 3 ── -->
+    <!-- ── Project 4 ── -->
     <section>
-        <h2>Data Engineering Project 3 - RAG Pipeline</h2>
+        <h2>Data Engineering Project 4 - RAG Pipeline</h2>
         <h3>Retrieval-Augmented Generation with LangChain, Groq &amp; HuggingFace</h3>
 
         <p>
@@ -270,11 +306,4 @@
 
         <p>
             🔗 <strong>Code:</strong>
-            <a href="https://github.com/faitusjelinej/AI/blob/main/Langchain/main.py" target="_blank" style="color:#2563eb;">
-                github.com/faitusjelinej/AI/blob/main/Langchain/main.py
-            </a>
-        </p>
-    </section>
-
-</body>
-</html>
+            <a href="https://github.com/faitusjelinej/AI/blob/main/Langchain/main.py" target="_blank" style="color:#2
